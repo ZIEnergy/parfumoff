@@ -1,0 +1,76 @@
+.advantages {
+  
+  &__header {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: @font-first;
+    color: #000;
+  }
+  
+  &__list {
+    
+  }
+  
+  &__item {
+    display: flex;
+    
+    &:nth-child(n+2) {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  &__item-icon {
+    width: 4.7rem;
+    height: 3.4rem;
+    flex: 0 0 auto;
+    
+    &--original {
+      background: url(../img/advantage-1.png) no-repeat;
+    }
+    
+    &--distributors {
+      background: url(../img/advantage-2.png) no-repeat;
+    }
+    
+    &--cashback {
+      background: url(../img/advantage-3.png) no-repeat;
+    }
+    
+    &--discounts {
+      background: url(../img/advantage-4.png) no-repeat;
+    }
+  }
+  
+  &__item-content {
+    font-size: 1.4rem;
+    font-family: @font-first;
+    color: #000;
+    line-height: 1.8rem;
+  }
+  
+  &__item-content-bold {
+    font-weight: 700;
+  }
+  
+  &--red {
+  
+    .advantages__item-icon {
+
+      &--original {
+        background: url(../img/advantage-1-red.png) no-repeat;
+      }
+
+      &--distributors {
+        background: url(../img/advantage-2-red.png) no-repeat;
+      }
+
+      &--cashback {
+        background: url(../img/advantage-3-red.png) no-repeat;
+      }
+
+      &--discounts {
+        background: url(../img/advantage-4-red.png) no-repeat;
+      }
+    }
+  }
+}

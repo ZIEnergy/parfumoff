@@ -1,0 +1,109 @@
+.item {
+  padding: 2rem 1rem 1rem;
+  border: 1px solid #eee;
+  width: 23%;
+  flex: 0 0 auto;
+  min-width: 27.5rem;
+  position: relative;
+  margin-left: 2.3rem;
+  
+  &:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  
+  &:nth-child(n+5) {
+    margin-top: 2.2rem;
+  }
+  
+  &__picture-link {
+    height: 19.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__picture {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  &__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  &__brand {
+    color: #000;
+    font-size: 2rem;
+  }
+  
+  &__name {
+    color: @color-first;
+    font-size: 2rem;
+    margin-left: .5rem;
+  }
+  
+  &__dscr {
+    font-size: 1.2rem;
+    color: #909090;
+    text-align: center;
+    height: 3.5rem;
+  }
+  
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__price-from {
+    color: @color-first;
+    font-size: 1.8rem;
+  }
+  
+  &__price-to {
+    color: #000;
+    font-size: 1.8rem;
+    margin-left: .5rem;
+  }
+  
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  &__link {
+    font-size: 1.6rem;
+    color: #35a1e2;
+  }
+  
+  &__buy {
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  &--discount {
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: url(../img/discount.png) no-repeat;
+      background-size: cover;
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}

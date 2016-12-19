@@ -1,0 +1,50 @@
+.brands {
+  
+  &:nth-child(n+2) {
+    margin-top: 4rem;
+  }
+  
+  &__header {
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  &__alphabet {
+    height: 4rem;
+    background: #cacaca;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  
+  &__alphabet-letter {
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    line-height: 4rem;
+    padding: 0 .5rem;
+    
+    &--active {
+      background: @color-first;
+      height: 4.5rem;
+      line-height: 5rem;
+      margin-top: -.5rem;
+    }
+  }
+  
+  &__list {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    width: 25%;
+    font-size: 1.3rem;
+    color: #000;
+    text-decoration: none;
+    line-height: 1.7rem;
+  }
+}

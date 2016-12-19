@@ -1,0 +1,13 @@
+mixin reviews(additionalClass)
+  .reviews(class=additionalClass)
+    .reviews__header Отзывы о магазине
+    .reviews__list
+      .reviews__item
+        .reviews__item-author Андрей
+        +stars
+        .reviews__item-content Покупал два парфюма в этом магазине и остался доволен 100%...
+      .reviews__item
+        .reviews__item-author Елена
+        +stars
+        .reviews__item-content Заказывала в этом магазине первый раз, себе любимой, мой лю...
+    a.reviews__link(href="#") Еще отзывы

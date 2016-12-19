@@ -4,5 +4,23 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    +header
+    +alphabet
+    .wrapper.content.clearfix
+      .content__top
+        +categories
+        .content__catalog-top
+          h1.content__header Новинки парфюмерии
+          .content__catalog-top-items
+            +item('item--discount')
+            +item
+            +item
+      +catalog
+    .wrapper
+      +comment
+      +brands
+      +brands
+      +info
+    +footer
+    +copyright
     include ../templates/scripts.pug

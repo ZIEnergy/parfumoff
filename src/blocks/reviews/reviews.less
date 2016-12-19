@@ -1,0 +1,46 @@
+.reviews {
+  
+  &__header {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: @font-first;
+    color: #000;
+  }
+  
+  &__list {
+    
+  }
+  
+  &__item {
+    
+    &:nth-child(n+2) {
+      margin-top: 2rem;
+    }
+  }
+  
+  &__item-author {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: @font-first;
+    color: #000;
+  }
+  
+  &__item-content {
+    font-size: 1.4rem;
+    font-family: @font-first;
+    color: #000;
+    line-height: 2rem;
+  }
+  
+  &__link {
+    color: #35a1e2;
+    font-size: 1.6rem;
+    font-family: @font-first;
+    display: block;
+    margin-top: 2rem;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

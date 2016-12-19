@@ -1,0 +1,10 @@
+mixin search(additionalClass)
+  .search(class=additionalClass)
+    .search__categories 
+      a.search__category-link.search__category-link--women(href="#") Женская
+      |&nbsp;/&nbsp;
+      a.search__category-link.search__category-link--men(href="#") Мужская
+      |&nbsp;парфюмерия
+    form.search__form(action="#", method="get")
+      input.search__input(type="text", placeholder="Поиск товара по названию")
+      button.search__button

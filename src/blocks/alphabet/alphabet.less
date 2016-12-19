@@ -1,0 +1,50 @@
+.alphabet {
+  background: @color-first;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+  
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: @font-first;
+  }
+  
+  &__link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: @font-first;
+    display: block;
+    margin-left: 6rem;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+  }
+  
+  &__category {
+    display: flex;
+  }
+  
+  &__item {
+    font-size: 3.4rem;
+    font-family: @font-first;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    
+    &:nth-child(n+2) {
+      margin-left: 1.8rem;
+    }
+  }
+}
