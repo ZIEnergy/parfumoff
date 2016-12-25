@@ -47,7 +47,8 @@ gulp.task('templates', function () {
   var params = {};
   gulp.src('./src/pages/*.pug')
     .pipe(pug({
-      locals: params
+      locals: params,
+      pretty: true
     }))
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.reload({stream:true}));
@@ -73,7 +74,7 @@ gulp.task('scripts:plugins', function () {
 
 gulp.task('scripts', function () {
   gulp.src(['./src/blocks/**/*.js', './src/scripts/script.js'])
-    .pipe(uglify())
+//    .pipe(uglify())
     .pipe(concat('script.js'))
     .pipe(insert.wrap('$(document).ready(function(){', '})'))
     .pipe(gulp.dest('./build/js'))
@@ -96,7 +97,7 @@ gulp.task('styles', function () {
     .pipe(autoprefixer({
         browsers: ['last 20 versions']
     }))
-    .pipe(cleanCSS())
+//    .pipe(cleanCSS())
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.reload({stream:true}));
 });
